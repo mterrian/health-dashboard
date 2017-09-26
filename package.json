@@ -1,0 +1,12 @@
+{
+  "name": "health-dashboard",
+  "version": "1.0.0",
+  "description": "Demo Healthcare Dashboard",
+  "main": "server.js",
+  "scripts": {
+    "test": "console.log('hello')",
+    "start": "node server.js"
+  },
+  "author": "HDDC",
+  "license": "ISC"
+}
