@@ -13,9 +13,10 @@
 }
 
 .box {
-    height:100px;
+    min-height: 200px;
+    margin: 10px 8px 8px 0px;
     border: 1px solid black;
-    margin-top: 5px;
+    border-radius: 3px;
 }
 
 
@@ -45,21 +46,58 @@
     
     .content {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1.2fr 4fr;
+        position: relative;
+        top: 40px;
+        grid-gap: 5px;
         grid-template-areas: 
-        "sidebarContainer dashboardContainer dashboardContainer"
-        "sidebarContainer dashboardContainer dashboardContainer"
-        "sidebarContainer dashboardContainer dashboardContainer"
+        "sidebarContainer dashboardContainer"
+        "sidebarContainer dashboardContainer";
     }
 
     .dashboardContainer {
-        grid-area: dashboardContainer;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        grid-template-areas:
+        "dashboardBox1 dashboardBox2"
+        "dashboardBox3 dashboardBox4";
+        grid-area: dashboardContainer; 
+        
     }
       
 
     .containerSidebar{
-    grid-area: sidebarContainer;
-    border: 1px black solid;
+        grid-area: sidebarContainer;
+        min-height: 600px;
+        border: 1px black solid;
+    }
+
+    .box{
+        min-height: 296px;
+        margin: 0 0 0 0;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+    
+    .dashboardBox1 {
+        grid-area: dashboardBox1;
+        background-color: red;
+    }
+    
+    .dashboardBox2 {
+        grid-area: dashboardBox2;
+        background-color: green;
+    }
+    
+    .dashboardBox3 {
+        grid-area: dashboardBox3;
+        background-color: yellow;
+    }
+    
+    .dashboardBox4 {
+        grid-area: dashboardBox4;
+        background-color: blue;
     }
 
 }
