@@ -1,6 +1,13 @@
 
 @media screen and (min-width: 320px){
 
+.formContainer{
+    border: 1px black solid;
+    width: 50%;
+    position: relative;
+    margin: 0 auto;
+}
+
 .dashboardContainer {
     display: grid;
     grid-template-columns: 1fr 1fr;

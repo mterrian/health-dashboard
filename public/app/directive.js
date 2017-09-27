@@ -1,14 +1,14 @@
 var app=angular.module('healthApp');
 
-app.directive('dashboard', function(){
+// app.directive('dashboard', function(){
 
-return {
-    replace: false,
-    restrict: 'E',
-    templateUrl: 'partials/dashboard.html' 
-}
+// return {
+//     replace: false,
+//     restrict: 'E',
+//     templateUrl: 'partials/dashboard.html' 
+// }
 
-});
+// });
 
 app.directive('sidebar', function(){
     
