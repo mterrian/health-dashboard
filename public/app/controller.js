@@ -1,18 +1,24 @@
 var app = angular.module('healthApp');
 
-app.controller('mainCtrl', function($scope, $timeout){
-
-
+app.controller('mainCtrl', function($scope, $timeout, healthFactory){
 
 });
 
+app.controller('dashboardCtrl', function($scope, $timeout, healthFactory){
+    
+        $scope.userObject = healthFactory.getLogin();     
 
-app.controller('loginCtrl', function($scope, $timeout, $location){
+});
+
+app.controller('loginCtrl', function($scope, $timeout, $location, healthFactory){
     
     $scope.submitWords=function(userInfo){
-        // healthFactory.checkLogin(userInfo)
-        $location.path('/dashboard');
-      }
-    
-        
+        console.log("login1")
+        healthFactory.checkLogin(userInfo).then(function(){
+            $scope.loginError= true;
+        });
+
+       
+    };
+  
 });
