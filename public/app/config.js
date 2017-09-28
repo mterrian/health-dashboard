@@ -8,7 +8,7 @@ controller: 'loginCtrl',
 templateUrl: 'partials/login.html'
 })
 .when('/dashboard',{
-    controller: 'mainCtrl',
+    controller: 'dashboardCtrl',
     templateUrl: 'partials/dashboard.html'
     })
 .otherwise({redirectTo: '/login'});

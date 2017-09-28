@@ -1,68 +1,11 @@
 
 @media screen and (min-width: 320px){
-body {
-        background-color: #CCCCCC;
-        font-family: 'Open Sans', sans-serif;
-}
 
-h2 {
-    margin-top: 50px;
-    padding-top: 15px;
-    text-align: center;
-    color: #000000;
-    text-transform: uppercase;
-    font-weight: normal;
-  }
-
-  h3, h5 {
+h3, h5 {
     color: #000000;
     text-align: center;
     font-weight: normal;
-  }
-
-  p{
-    text-align: center;
-    color: #000000;
-    font-size: 20px;
-    margin-top: 40px;
-  }
-
-.formContainer{
-    border: 1px black solid;
-    position: relative;
-    margin: 0 auto;
-    margin-top: 60px;
-    width: 40%;
-    height: 400px;
-    background-color: #FF6600;
-    border-radius: 10px;
 }
-
-input {
-    display: block;
-    width: 80%;
-    height: 30px;
-    border-radius: 10px;
-    margin: 10px auto;
-  }
-  
-  button {
-    display: block;
-    width: 80%;
-    border-radius: 10px;
-    margin: 0 auto;
-    color: #F7F8F9;
-    height: 35px;
-      text-transform: uppercase;
-  }
-
-  button:hover {
-    color: #63CEC2;
-  }
-  
-  a:hover {
-    color: #63CEC2;
-  }
 
 .dashboardContainer {
     display: grid;
@@ -85,22 +28,26 @@ input {
 
 .dashboardBox1 {
     grid-area: dashboardBox1;
-    background-color: red;
+    border: solid 2px rgb(222,92,34);
+    
 }
 
 .dashboardBox2 {
     grid-area: dashboardBox2;
-    background-color: green;
+    border: solid 2px rgb(222,92,34);
+    
 }
 
 .dashboardBox3 {
     grid-area: dashboardBox3;
-    background-color: yellow;
+    border: solid 2px rgb(222,92,34);
+   
 }
 
 .dashboardBox4 {
     grid-area: dashboardBox4;
-    background-color: blue;
+    border: solid 2px rgb(222,92,34);
+    
 }
 
 }
@@ -114,8 +61,17 @@ input {
         top: 40px;
         grid-gap: 5px;
         grid-template-areas: 
+        "greeting greeting"
         "sidebarContainer dashboardContainer"
         "sidebarContainer dashboardContainer";
+    }
+    .greeting {
+        grid-area: greeting;
+        margin: 0 auto;
+    }
+
+    #sidebarGreeting {
+        text-align: center;
     }
 
     .dashboardContainer {
@@ -145,22 +101,23 @@ input {
     
     .dashboardBox1 {
         grid-area: dashboardBox1;
-        background-color: red;
+        border: solid 3px rgb(222,92,34);
     }
     
     .dashboardBox2 {
         grid-area: dashboardBox2;
-        background-color: green;
+        border: solid 3px rgb(222,92,34);
     }
     
     .dashboardBox3 {
         grid-area: dashboardBox3;
-        background-color: yellow;
+        border: solid 3px rgb(222,92,34);
+        background-color: white;
     }
     
     .dashboardBox4 {
         grid-area: dashboardBox4;
-        background-color: blue;
+        border: solid 3px rgb(222,92,34);
     }
 
 }
