@@ -11,10 +11,12 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "chart.js": "^2.7.0",
     "express": "^4.15.5"
   },
-  
-  "devDependencies": {},
+  "devDependencies": {
+    "json-server": "^0.12.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mterrian/health-dashboard.git"

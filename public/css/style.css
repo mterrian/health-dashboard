@@ -1,3 +1,231 @@
-body {
-    background-color: lightblue;
+
+@media screen and (min-width: 320px){
+  body {
+    background-color: rgba(255,212,046, 0.6);
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  }
+
+  h2 {
+    margin-top: 50px;
+    padding-top: 15px;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
+
+  h3, h5 {
+    color: #000000;
+    text-align: center;
+    font-weight: normal;
+  }
+
+  p{
+    text-align: center;
+    color: #000000;
+    font-size: 20px;
+    margin-top: 40px;
+  }
+
+  .formContainer{
+    position: relative;
+    margin: 0 auto;
+    margin-top: 60px;
+    width: 40%;
+    height: 400px;
+    border-radius: 10px;
+  }
+
+  input {
+    display: block;
+    background-color: white;
+    width: 80%;
+    height: 30px;
+    border-radius: 10px;
+    margin: 10px auto;
+  }
+  
+  button {
+    display: block;
+    width: 80%;
+    border-radius: 4px;
+    margin: 0 auto;
+    color: white;
+    background-color: rgb(222,92,34);
+    height: 35px;
+      text-transform: uppercase;
+  }
+
+  button:hover {
+    color: #63CEC2;
+  }
+  
+  a:hover {
+    color: #63CEC2;
+  }
+
+.dashboardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "dashboardBox1 dashboardBox1"
+    "dashboardBox2 dashboardBox2"
+    "dashboardBox3 dashboardBox3"
+    "dashboardBox4 dashboardBox4"
+    ;
+}
+
+.box {
+    min-height: 200px;
+    margin: 10px 8px 8px 0px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    text-align: center;
+    background-color: rgb(064,143,205);
+}
+
+.categories {
+    font-size: 30px;
+    color: white;
+}
+
+.dashboardBox1 {
+    grid-area: dashboardBox1;
+}
+
+.dashboardBox2 {
+    grid-area: dashboardBox2;
+}
+
+.dashboardBox2 img{
+    position: relative;
+    left: 20px;
+    margin-bottom: 50px
+}
+
+.deductiblePercentage{
+    z-index: 2;
+    position: relative;
+    right: 100px;
+    bottom: 98px;
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: white;
+}
+
+.dashboardBox3 {
+    grid-area: dashboardBox3;
+}
+
+.dashboardBox4 {
+    grid-area: dashboardBox4;
+}
+
+    img{
+        margin-bottom: 30px
+    }
+
+}
+
+
+
+
+/* !!!!!!!!!!!!!!!!
+   BEGIN STYLING FOR
+   DESKTOP VIEW
+   !!!!!!!!!!!!!!!!
+*/
+
+
+@media screen and (min-width: 768px){
+    
+    .content {
+        display: grid;
+        grid-template-columns: 1.2fr 4fr;
+        position: relative;
+        top: 40px;
+        grid-gap: 5px;
+        grid-template-areas: 
+        "sidebarContainer dashboardContainer"
+        "sidebarContainer dashboardContainer";
+    }
+
+    .dashboardContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+        grid-template-areas:
+        "dashboardBox1 dashboardBox2"
+        "dashboardBox3 dashboardBox4";
+        grid-area: dashboardContainer; 
+        
+    }
+      
+
+    .containerSidebar{
+        grid-area: sidebarContainer;
+        min-height: 615px;
+        border: 1px solid transparent;
+        background-color: rgb(119,136,136);
+    }
+
+    .box{
+        min-height: 296px;
+        margin: 0 3px 8px 6px;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        text-align: center;
+        background-color: rgb(064,143,205);
+        box-shadow: 1px 3px 3px teal
+    }
+
+    .categories {
+        font-size: 30px;
+        color: white;
+    }
+
+    .list {
+        list-style: none;
+        padding: 10px 0 10px 10px;
+    }
+    
+    .dashboardBox1 {
+        grid-area: dashboardBox1;
+       
+    }
+
+    .dashboardBox2 img{
+        position: relative;
+        top: 20px;
+        left: 20px;
+        margin-bottom: 0px
+    }
+
+    .deductiblePercentage{
+        z-index: 2;
+        position: relative;
+        right: 100px;
+        bottom: 30px;
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        color: white;
+    }
+    
+    .dashboardBox2 {
+        grid-area: dashboardBox2;
+       
+    }
+    
+    .dashboardBox3 {
+        grid-area: dashboardBox3;
+        
+    }
+    
+    .dashboardBox4 {
+        grid-area: dashboardBox4;
+        text-align: center;
+    }
+
 }
