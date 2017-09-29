@@ -2,6 +2,7 @@
   
   body {
     background-color: white;
+    /* background-color: rgba(255,212,046, 0.6); */
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     margin: 0 !important;
     padding: 0 !important;
@@ -59,51 +60,6 @@
     font-weight: normal;
   }git
 
-
-
-  p{
-    text-align: center;
-    color: #000000;
-    font-size: 20px;
-    margin-top: 40px;
-  }
-
-  .formContainer{
-    position: relative;
-    margin: 0 auto;
-    margin-top: 60px;
-    width: 40%;
-    height: 400px;
-    border-radius: 10px;
-  }
-
-  input {
-    display: block;
-    background-color: white;
-    width: 80%;
-    height: 30px;
-    border-radius: 10px;
-    margin: 10px auto;
-  }
-  
-  button {
-    display: block;
-    width: 80%;
-    border-radius: 4px;
-    margin: 0 auto;
-    color: white;
-    background-color: rgb(222,92,34);
-    height: 35px;
-      text-transform: uppercase;
-  }
-
-  button:hover {
-    color: #63CEC2;
-  }
-  
-  a:hover {
-    color: #63CEC2;
-  }
 
 .dashboardContainer {
     display: grid;
