@@ -1,11 +1,13 @@
 @media screen and (min-width: 320px){
 body {
     background-color: rgba(255,212,046, 0.6);
+    position: relative;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 h2#loginH2 {
-margin-top: 50px;
+margin-top: 40px;
+margin-bottom: 30px;
 padding-top: 15px;
 text-align: center;
 color: #000000;
@@ -24,42 +26,65 @@ font-size: 20px;
 #anchorSpan {
     margin: 0 auto;
     display: inline-block;
-    width: 350px;
+    width: 400px;
     text-align: center;
-    margin-top: 40px;
+}
+
+label {
+    display: inline-block;
+    text-align: right;
+    width: 70px;
+    padding-right: 10px;
+    margin-left: -30px;
+}
+
+.checkboxLabel {
+        display: inline-block;
+        width: 150px;
 }
 
 .formContainer{
 border: 1px black solid;
 position: relative;
-margin: 0 auto;
-margin-top: 60px;
-width: 350px;
+margin: 150 auto;
+width: 400px;
+text-align: center;
 height: 400px;
 background-color: rgb(001,221,227);
 border-radius: 10px;
 }
 
-input {
-    display: block;
-    width: 80%;
-    height: 30px;
-    font-size: 18px;
-    border-radius: 10px;
-    color: rgb(064,143,205);
-    margin: 10px auto;
-}
+    input  {
+        width: 250px;
+        height: 30px;
+        font-size: 18px;
+        border-radius: 2px;
+        color: rgb(064,143,205);
+        margin: 10px auto;
+        display: inline-block;
+    }
 
-button {
-display: block;
-width: 80%;
-border-radius: 10px;
-margin: 0 auto;
-background-color: rgb(119,136,136);
-height: 35px;
-text-transform: uppercase;
-font-size: 15px;
-}
+    button {
+        display: block;
+        width: 150px;
+        border-radius: 5px;
+        margin: 0 auto;
+        background-color: rgb(119,136,136);
+        height: 35px;
+        text-transform: uppercase;
+        font-size: 15px;
+        margin-bottom: 10px;
+        }
+
+.checkboxDiv {
+    margin-bottom: 20px;
+    margin-top: 10px;
+} 
+    .checkboxInput{
+        display: inline-block;
+        width: 40px;
+        height: 15px;
+    }
 
 button:hover {
 color: rgb(255,181,000);
@@ -69,12 +94,12 @@ color: rgb(255,181,000);
 color: rgb(255,181,000);;
 }
 
-/* .hide {
-    display:none;
-} */
-
-#loginError {
+p#loginError {
    color: red;
+   display: inline-block;
+   width: 400px;
+   height: 20px;
+   text-align: center;
+   font-size: 15px;
 }
-
 }

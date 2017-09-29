@@ -21,6 +21,6 @@ app.use(bodyParser.json({ extended: true }));
 app.use('/', routes);
 app.use(express.static(__dirname + '/public'));
 
-app.listen(5000, function() {
+app.listen(4000, function() {
     console.log('Server is running :]');
   });

@@ -15,7 +15,11 @@
       "username": "Bill.Shea",
       "firstName": "Bill",
       "lastName": "Shea",
-      "password": "HDDC"
+      "password": "HDDC",
+      "gender": "Male",
+      "plan": "PPO",
+      "deductible": 1000,
+      "deductiblePaid": 315.13
   }
 ]
 }
