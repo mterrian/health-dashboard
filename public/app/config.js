@@ -11,6 +11,10 @@ templateUrl: 'partials/login.html'
     controller: 'dashboardCtrl',
     templateUrl: 'partials/dashboard.html'
     })
+.when('/your-care', {
+    controller: 'dashboardCtrl',
+    templateUrl: 'partials/your-care.html'
+})
 .otherwise({redirectTo: '/login'});
 
 });

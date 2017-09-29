@@ -1,1 +1,1 @@
-var app = angular.module('healthApp', ['ngRoute'], ['chart.js']);
+var app = angular.module('healthApp', ['ngRoute', 'ngAnimate']);

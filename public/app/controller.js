@@ -4,9 +4,13 @@ app.controller('mainCtrl', function($scope, $timeout, healthFactory){
 
 });
 
-app.controller('dashboardCtrl', function($scope, $timeout, healthFactory){
+app.controller('dashboardCtrl', function($scope, $timeout, $location, healthFactory){
     
-        $scope.userObject = healthFactory.getLogin();     
+        $scope.userObject = healthFactory.getLogin();   
+        
+        $scope.go = function(path){
+            $location.path(path)
+        }
 
 });
 

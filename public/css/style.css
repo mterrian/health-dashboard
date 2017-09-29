@@ -1,15 +1,64 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');  
+  
   body {
+    background-color: white;
     /* background-color: rgba(255,212,046, 0.6); */
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    margin: 0 !important;
+    padding: 0 !important;
+ }
+
+ .greeting{
+    background-color: rgb(102,102,102);
+    width: 100vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0
+
+ }
+
+ .greeting h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: 1px 1px #55553E;
+    letter-spacing: 2px;
+    position: relative;
+    font-size: 50px;
+    color: #E4E0D7;
+    left: 125px;
+    z-index: 2;
+ }
+
+ .greeting img{
+     z-index: 0;
+     position: absolute;
+     top: 0px;
+     left: 0px;
+ }
+
+ .content{
+     margin-top:0;
  }
 
 @media screen and (min-width: 320px){
+
+  .containerSidebar{
+      display:none;
+  }
+
+  h2 {
+    margin-top: 50px;
+    padding-top: 15px;
+    text-align: center;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: normal;
+  }
 
   h3, h5 {
     color: #000000;
     text-align: center;
     font-weight: normal;
-  }
+  }git
 
 
 .dashboardContainer {
@@ -80,6 +129,8 @@
 
 
 
+
+
 /* !!!!!!!!!!!!!!!!
    BEGIN STYLING FOR
    DESKTOP VIEW
@@ -92,9 +143,9 @@
     .content {
         display: grid;
         grid-template-columns: 1.2fr 4fr;
-        position: relative;
-        top: 40px;
-        grid-gap: 5px;
+        /* position: relative;
+        top: 40px; */
+        /* grid-gap: 5px; */
         grid-template-areas: 
         "greeting greeting"
         "sidebarContainer dashboardContainer"
@@ -117,15 +168,19 @@
         "dashboardBox1 dashboardBox2"
         "dashboardBox3 dashboardBox4";
         grid-area: dashboardContainer; 
+        margin-top: 5px;
+        margin-left: 5px;
+        margin-right: 5px;
         
     }
       
 
     .containerSidebar{
+        display: block;
         grid-area: sidebarContainer;
         min-height: 615px;
         border: 1px solid transparent;
-        background-color: rgb(119,136,136);
+        background-color: rgb(102,102,102);
     }
 
     .box{
@@ -134,7 +189,7 @@
         border: 1px solid transparent;
         border-radius: 6px;
         text-align: center;
-        background-color: rgb(064,143,205);
+        background-color: rgb(000,170,153);
         box-shadow: 1px 3px 3px teal
     }
 
@@ -150,7 +205,8 @@
     
     .dashboardBox1 {
         grid-area: dashboardBox1;
-       
+        
+
     }
 
     .dashboardBox2 img{
@@ -185,3 +241,33 @@
     }
 
 }
+
+.dashboardBox1:hover, .dashboardBox3:hover{
+    cursor: pointer;
+    display: block;
+    z-index:20;
+    min-height: 305px;
+    position: relative;
+    bottom: 3px;
+    background-color: #3376A9;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+.dashboardBox2:hover, .dashboardBox4:hover{
+    cursor: pointer;
+    display: block;
+    z-index:20;
+    min-height: 305px;
+    position: relative;
+    bottom: 3px;
+    background-color: #3376A9;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+}
+
+
