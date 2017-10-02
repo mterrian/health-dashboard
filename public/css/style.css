@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');  
   
   body {
-    background-color: white;
+    background-color: rgba(240, 244, 163, 0.31);
     /* background-color: rgba(255,212,046, 0.6); */
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
     margin: 0 !important;
@@ -13,7 +13,8 @@
     width: 100vw;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-bottom: 0
+    margin-bottom: 0;
+    border-bottom: 4px solid transparent;
 
  }
 
@@ -58,7 +59,7 @@
     color: #000000;
     text-align: center;
     font-weight: normal;
-  }git
+  }
 
 
 .dashboardContainer {
@@ -73,12 +74,13 @@
 }
 
 .box {
-    min-height: 200px;
-    margin: 10px 8px 8px 0px;
+    min-height: 296px;
+    margin: 4px 10px 8px 10px;
     border: 1px solid transparent;
-    border-radius: 3px;
+    border-radius: 6px;
     text-align: center;
-    background-color: rgb(064,143,205);
+    background-color: rgb(000,170,153);
+    box-shadow: 1px 3px 3px teal
 }
 
 .categories {
@@ -181,6 +183,7 @@
         min-height: 615px;
         border: 1px solid transparent;
         background-color: rgb(102,102,102);
+        box-shadow: inset -2px -1px 1px #B8B7AE;
     }
 
     .box{
