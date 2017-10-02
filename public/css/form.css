@@ -62,11 +62,11 @@ font-weight: normal;
 } */
 
 a#loginA {
-text-align: center;
-position: relative;
-margin: 0 auto;
-color: #000000;
-font-size: 15px;
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+    color: #000000;
+    font-size: 15px;
 }
 
 #anchorSpan {
