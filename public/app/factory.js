@@ -4,13 +4,18 @@ app.factory('healthFactory', function($http, $location) {
 
     var userObj = {};
     var loginError = false;
+    var userCare = {};
     
       return {
         // These are our two methods.
+        loginError: loginError,
         checkLogin: checkLogin,
-        getLogin: getLogin
+        getLogin: getLogin,
+        setPrevCare: setPrevCare,
+        getPrevCare: getPrevCare
       }
 
+      
     function checkLogin(userInfo){
         return $http({
             method: 'GET',
@@ -33,6 +38,17 @@ app.factory('healthFactory', function($http, $location) {
         return userObj;
     }
 
+    function setPrevCare(){
+        return $http({
+            method: 'GET',
+            url: 'http://localhost:3000/prevCare/'
+        }).then(function successfullCallBack(dataBase){
+            userCare = dataBase.data;
+        });
+    };
 
+    function getPrevCare(){
+        return userCare;
+    }
 
 });

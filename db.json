@@ -21,5 +21,12 @@
       "deductible": 1000,
       "deductiblePaid": 315.13
   }
+],
+    "prevCare": [
+    { "id": 1,
+      "pCare1": "Check blood pressure - every 2 years",
+      "pCare2": "Flu shot - every flu season",
+      "pCare3": "Body Mass Index - periodically"
+    }
 ]
 }
