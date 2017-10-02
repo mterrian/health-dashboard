@@ -1,10 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');  
+
+
+.greeting{
+    background-color: rgb(102,102,102);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+    border-bottom: 4px solid transparent;
+    border-radius: 1px;
+
+ }
+
+ .greeting h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: 2px 4px #55553E;
+    letter-spacing: 2px;
+    position: relative;
+    font-size: 50px;
+    color: #E4E0D7;
+    left: 0;
+    z-index: 2;
+ }
+
+ .greeting img{
+    z-index: 0;
+    position: absolute;
+    top: 0px;
+    left: 1px;
+}
+
+.formContainer{
+    width: 40%;
+    height: 480px;
+    background-color:#E4E0D7;
+    margin: 0 auto;
+    position: fixed;
+    text-align: center;
+    top: 40px;
+    left: 0;
+    right: 0;
+    border: 3px solid rgb(102,102,102);
+    border-radius: 4px;
+    box-shadow: 8px 10px 5px rgba(24, 24, 23, 0.61)
+
+}
+
 @media screen and (min-width: 320px){
 body {
     position: relative;
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-h2#loginH2 {
+/* h2#loginH2 {
 margin-top: 40px;
 margin-bottom: 30px;
 padding-top: 15px;
@@ -12,7 +59,7 @@ text-align: center;
 color: #000000;
 font-size: 30px;
 font-weight: normal;
-    }
+} */
 
 a#loginA {
 text-align: center;
@@ -43,7 +90,7 @@ label {
         width: 140px;
 }
 
-.formContainer{
+ /* .formContainer{
 border: 1px black solid;
 position: relative;
 margin: 150 auto;
@@ -52,14 +99,14 @@ text-align: center;
 height: 480px;
 background-color: rgb(255,181,000);
 border-radius: 10px;
-}
+}  */
 
     input  {
         width: 250px;
         height: 30px;
         font-size: 18px;
-        border-radius: 2px;
-        color: rgb(064,143,205);
+        border-radius: 3px;
+        border: 1px solid transparent;
         margin: 10px auto;
         display: inline-block;
     }
@@ -68,13 +115,16 @@ border-radius: 10px;
         display: block;
         width: 150px;
         border-radius: 5px;
+        border: 1px solid transparent;
         margin: 0 auto;
-        background-color: rgb(119,136,136);
-        height: 35px;
         text-transform: uppercase;
-        font-size: 15px;
-        margin-top: 5px;
+        background-color: rgb(000,170,153);
+        box-shadow: 1px 3px 3px teal;
+        font-size: 20px;
+        color: white;
+        margin-top: 10px;
         margin-bottom: 10px;
+        padding: 8px 0 8px 0
         }
 
 .checkboxDiv {
@@ -85,10 +135,16 @@ border-radius: 10px;
         display: inline-block;
         width: 40px;
         height: 15px;
+        z-index: 5px;
+        
     }
 
 button:hover {
-color: rgb(255,181,000);
+    background-color: #3376A9;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-out;
+    -o-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
 }
 
 #anchorSpan:hover {
