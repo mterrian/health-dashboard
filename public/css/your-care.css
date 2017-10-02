@@ -1,0 +1,21 @@
+/* @media screen and (min-width: 320px){
+
+
+
+.dashboardContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    " . exitButton"
+    "prevCareContent prevCareContent";
+
+}
+
+.exitButton {
+    grid-area: exitButton;
+}
+.prevCareContent{
+    grid-area: prevCareContent;
+}
+
+} */
