@@ -10,10 +10,8 @@ app.controller('dashboardCtrl', function($scope, $timeout, $location, healthFact
         $scope.userObject = healthFactory.getLogin();   
         
         $scope.go = function(path){
-          healthFactory.setPrevCare();
             $location.path(path)
         }
-
         $scope.userCare=healthFactory.getPrevCare()
 
 });
@@ -21,7 +19,7 @@ app.controller('dashboardCtrl', function($scope, $timeout, $location, healthFact
 app.controller('loginCtrl', function($scope, $timeout, $location, healthFactory){
     
     $scope.submitWords=function(userInfo){
-        console.log("login1")
+        healthFactory.setPrevCare();
         healthFactory.checkLogin(userInfo).then(function(){
             $scope.loginError= true;
         });

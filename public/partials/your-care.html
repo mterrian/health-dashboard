@@ -1,18 +1,21 @@
-<div class="content">
-    <div class="greetingCare">
-            <h1>Your Care</h1>
-            <img src="/images/accenture_arrow.png" width="130" height="150" alt="">
+<!-- <div class="contentYourCare"> -->
+   
+
+    <div class="yourCareContainer">
+
+    <div class="greeting">
+        <h1>Your Care</h1>
+        <img src="/images/accenture_arrow.png" width="130" height="150" alt="">
+        <div class="exitButton">
+                <span class="back" ng-click="go('/dashboard')">X</span>
+        </div>
     </div>   
 
-    <div class="dashboardContainer box">
-        <div class="exitButton">
-        <span class="back" ng-click="go('/dashboard')">X</span>
-        </div>
-
+           <h3 class="yourCareTitle">{{userObject[0].firstName}}'s Your Care Reminders</h3> 
         <div class="prevCareContent">     
             <p>{{userCare[0].pCare1}}</p>       
             <p>{{userCare[0].pCare2}}</p>  
             <p>{{userCare[0].pCare3}}</p>   
         </div>
     </div>
-</div>
+<!-- </div> -->
