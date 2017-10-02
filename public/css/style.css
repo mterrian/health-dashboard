@@ -139,6 +139,31 @@
 
 
 @media screen and (min-width: 768px){
+
+    .bar-container {
+        border: 3px solid #ccc;
+        height: 50px;
+        width: 90%;
+        background-color: white;
+    }
+      
+    .bar-data {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #20BDD4;
+        font-size: 18px;
+        height: 100%;
+        animation: amount-paid 1s;
+        animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+
+     
+      
+      
+    @keyframes amount-paid {
+        0% { width: 0; color: transparent; padding: 0; }
+      }
     
     .content {
         display: grid;

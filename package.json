@@ -12,7 +12,8 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "chart.js": "^2.7.0",
-    "express": "^4.15.5"
+    "express": "^4.15.5",
+    "nanobar": "^0.4.2"
   },
   "devDependencies": {
     "json-server": "^0.12.0"

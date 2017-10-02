@@ -6,6 +6,11 @@ app.controller('mainCtrl', function($scope, $timeout){
 
 });
 
+app.controller('deductibleCtrl', function($scope, $timeout, $location, healthFactory,) {
+    $scope.amountPaid = healthFactory.chartCtrl();
+    $scope.showBar = healthFactory.checkProgress(); 
+})
+
 
 app.controller('loginCtrl', function($scope, $timeout, $location){
     
