@@ -5,7 +5,7 @@ app.controller('mainCtrl', function($scope, $timeout, healthFactory){
 
 });
 
-app.controller('deductibleCtrl', function($scope, $timeout, $location) {
+app.controller('deductibleCtrl', function($scope, $timeout, $location, healthFactory) {
     // $scope.ammountPaid = healthFactory.chartCtrl();
     $scope.amountPaid = function(){
         var chart = document.getElementById("newChart");
@@ -21,6 +21,7 @@ app.controller('deductibleCtrl', function($scope, $timeout, $location) {
             }
         }
     }
+    $scope.userObject = healthFactory.getLogin();  
 
     $scope.go = function(path){
         $location.path(path)
