@@ -7,6 +7,8 @@ app.controller('mainCtrl', function($scope, $timeout, healthFactory){
 
 app.controller('dashboardCtrl', function($scope, $timeout, $location, healthFactory){
     
+        
+
         $scope.userObject = healthFactory.getLogin();   
         
         $scope.go = function(path){
@@ -14,10 +16,14 @@ app.controller('dashboardCtrl', function($scope, $timeout, $location, healthFact
         }
         $scope.userCare=healthFactory.getPrevCare()
 
+        $scope.date=healthFactory.getDate();
+
 });
 
 app.controller('loginCtrl', function($scope, $timeout, $location, healthFactory){
     
+    $scope.time = healthFactory.setDate();
+
     $scope.submitWords=function(userInfo){
         healthFactory.setPrevCare();
         healthFactory.checkLogin(userInfo).then(function(){

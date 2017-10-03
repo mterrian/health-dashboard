@@ -60,9 +60,6 @@
         background-image: url("../images/accenture_portal_mobile.png");
     }
     
- 
-
-
   .containerSidebar{
       display:none;
   }
@@ -72,7 +69,7 @@
     padding-top: 15px;
     text-align: center;
     color: #000000;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-weight: normal;
   }
 

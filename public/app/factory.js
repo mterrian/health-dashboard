@@ -5,6 +5,7 @@ app.factory('healthFactory', function($http, $location) {
     var userObj = {};
     var loginError = false;
     var userCare = {};
+    var time = {};
     
       return {
         // These are our two methods.
@@ -13,6 +14,8 @@ app.factory('healthFactory', function($http, $location) {
         getLogin: getLogin,
         setPrevCare: setPrevCare,
         getPrevCare: getPrevCare
+        // setDate: setDate,
+        // getDate: getDate
       }
 
       
@@ -49,6 +52,21 @@ app.factory('healthFactory', function($http, $location) {
 
     function getPrevCare(){
         return userCare;
-    }
+    };
+
+    // function setDate() {
+    //    return $http({
+    //        method: 'GET',
+    //        url: '/time'
+    //    }).then(function successfullCallBack(response){
+    //     console.log(response.data)
+    //     time = response.data;
+      
+    //    });
+      
+    // };
+    // function getDate(){
+    //     return time;
+    // }
 
 });
