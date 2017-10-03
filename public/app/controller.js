@@ -12,7 +12,7 @@ app.controller('deductibleCtrl', function($scope, $timeout, $location, healthFac
         var width = 1;
         var id = setInterval(frame, 100);
         function frame(){
-            if (width >= 50) {
+            if (width >= 33) {
                 clearInterval(id);
             } else {
                 width++;
