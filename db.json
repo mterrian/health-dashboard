@@ -1,9 +1,32 @@
 {
     "posts": [
-      { "id": 1, "title": "json-server", "author": "typicode" }
+      { "id": 1, 
+        "title": "json-server", 
+        "author": "typicode" }
     ],
     "comments": [
-      { "id": 1, "body": "some comment", "postId": 1 }
+      { "id": 1, 
+        "body": "some comment", 
+        "postId": 1 
+      }
     ],
-    "profile": { "name": "typicode" }
+    "profile": [
+    { "id": 2,
+      "username": "Bill.Shea",
+      "firstName": "Bill",
+      "lastName": "Shea",
+      "password": "HDDC",
+      "gender": "Male",
+      "plan": "PPO",
+      "deductible": 1000,
+      "deductiblePaid": 315.13
   }
+],
+    "prevCare": [
+    { "id": 1,
+      "pCare1": "Check blood pressure - every 2 years",
+      "pCare2": "Flu shot - every flu season",
+      "pCare3": "Body Mass Index - periodically"
+    }
+]
+}

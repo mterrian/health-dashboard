@@ -10,9 +10,10 @@
   "author": "HDDC",
   "license": "ISC",
   "dependencies": {
+    "angular-chart.js": "^1.1.1",
     "body-parser": "^1.18.2",
     "chart.js": "^2.7.0",
-    "express": "^4.16.1",
+    "express": "^4.15.5",
     "nanobar": "^0.4.2"
   },
   "devDependencies": {
