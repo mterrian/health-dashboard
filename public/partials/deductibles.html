@@ -1,11 +1,11 @@
 <div>
-    <p>{{showBar}}</p>
+    <p>{{}}</p>
 </div>
 
 <div>
     <canvas id="myChart"></canvas>
 </div>
 
-<div class ="bar-container" id = "newChart">
-    <div class="bar-data">{{ amountPaid }}</div>
+<div class ="bar-container" id = "fixedChart">
+    <div class="bar-data" id = "newChart" ng-style="amountPaid()">{{}}</div>
 </div>
