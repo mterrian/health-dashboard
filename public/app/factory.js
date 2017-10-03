@@ -2,6 +2,7 @@ var app = angular.module('healthApp');
 
 app.factory('healthFactory', function($http, $location) {
 
+
     var userObj = {};
     var loginError = false;
     var userCare = {};
@@ -51,4 +52,5 @@ app.factory('healthFactory', function($http, $location) {
         return userCare;
     }
 
+    
 });

@@ -1,0 +1,60 @@
+@media screen and (min-width: 768px){
+
+    .deductiblesContainer {
+        width: 80%;
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-top: 60px;
+        display: grid;
+        background-color: lightblue;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "greeting greeting"
+        "deductibleTitle deductibleTitle"
+        "deductibleContent deductibleContent"
+    }
+
+    .greeting {
+        background-color: rgb(102, 102, 102);
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: relative;
+        margin-bottom: 0;
+        border-bottom: 4px solid transparent;
+        border-radius: 1px;
+        grid-area: greeting;
+    }
+
+    .greeting h1 {
+        font-family: 'Source Sans Pro', sans-serif;
+        text-shadow: 2px 4px #55553E;
+        letter-spacing: 2px;
+        position: relative;
+        font-size: 50px;
+        color: #E4E0D7;
+        left: 0;
+        z-index: 2;
+    }
+
+    .greeting img {
+        z-index: 0;
+        position: absolute;
+        top: 0px;
+        left: 1px;
+    }
+
+    .exitButton {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+    }
+
+    .deductibleTitle {
+        grid-area: deductibleTitle;
+    }
+
+    .deductibleContent {
+        grid-area: deductibleContent;
+        padding-left: 20px;
+    }
+}

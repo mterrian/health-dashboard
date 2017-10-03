@@ -1,1 +1,19 @@
-<canvas id="pie" class="chart chart-pie" chart-data="data" chart-labels="labels" chart-options="options"></canvas>
+<div class="deductiblesContainer">
+
+    <div class="greeting">
+        <h1>Deductibles</h1>
+        <img src ="/images/accenture_arrow.png" width="130" height="150" alt="">
+        <div class = "exitButton">
+            <span class="back" ng-click="go('/dashboard)">X</span>
+        </div>
+    </div>
+
+    <h3 class="deductibleTitle">{{userObject[0].firstName}}'s Deductible Details</h3>
+    <div class="deductibleContent">
+        <div class="bar-container" id="fixedChart">
+            <div class="bar-data" id="newChart" ng-style="amountPaid()">
+                <span>{{style}}</span>
+            </div>
+        </div>
+    </div>
+</div>
