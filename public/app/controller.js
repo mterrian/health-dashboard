@@ -21,6 +21,10 @@ app.controller('deductibleCtrl', function($scope, $timeout, $location) {
             }
         }
     }
+
+    $scope.go = function(path){
+        $location.path(path)
+    }
 });
 
 

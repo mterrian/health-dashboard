@@ -19,6 +19,10 @@ templateUrl: 'partials/login.html'
     controller: 'dashboardCtrl',
     templateUrl: 'partials/your-care.html'
 })
+.when('/plan-ahead',{
+    controller: 'planCtrl',
+    templateUrl: 'partials/plan-ahead.html'
+    })
 .otherwise({redirectTo: '/login'});
 
 });

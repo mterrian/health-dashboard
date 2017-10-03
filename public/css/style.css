@@ -163,33 +163,6 @@
 
 @media screen and (min-width: 768px){
 
-
-    #fixedChart {
-        border-radius: 50px;
-        border: 3px solid #ccc;
-        height: 50px;
-        width: 90%;
-        background-color: white;
-    }
-        
-    #newChart {
-        color: white;
-        border-radius: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #20BDD4;
-        font-size: 18px;
-        height: 100%;
-        animation: amount-paid 1s;
-        animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
-        }
-    
-    }
-
-
-    @keyframes amount-paid {
-        0% { width: 0; color: transparent; padding: 0; }
     body{
         background-image: url("../images/accenture_portal.png");
         background-repeat: no-repeat
@@ -303,26 +276,25 @@
     cursor: pointer;
     display: block;
     z-index:20;
-    min-height: 305px;
-    position: relative;
-    bottom: 3px;
+    transform: scale3d(1.03,1.03,1);
     background-color: #3376A9;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    box-shadow: 1px 3px 3px rgba(24, 24, 23, 0.61)
+    
 }
 
 .dashboardBox2:hover, .dashboardBox4:hover{
     cursor: pointer;
     display: block;
     z-index:20;
-    min-height: 305px;
-    position: relative;
-    bottom: 3px;
+    transform: scale3d(1.03,1.03,1);
     background-color: #3376A9;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-out;
-    -o-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-out;
+    -o-transition: all 0.4s ease-out;
+    transition: all 0.4s ease-out;
+    box-shadow: 1px 3px 3px rgba(24, 24, 23, 0.61)
 }
