@@ -13,9 +13,9 @@ app.factory('healthFactory', function($http, $location) {
         checkLogin: checkLogin,
         getLogin: getLogin,
         setPrevCare: setPrevCare,
-        getPrevCare: getPrevCare
-        // setDate: setDate,
-        // getDate: getDate
+        getPrevCare: getPrevCare,
+        setDate: setDate,
+        getDate: getDate
       }
 
       
@@ -54,19 +54,19 @@ app.factory('healthFactory', function($http, $location) {
         return userCare;
     };
 
-    // function setDate() {
-    //    return $http({
-    //        method: 'GET',
-    //        url: '/time'
-    //    }).then(function successfullCallBack(response){
-    //     console.log(response.data)
-    //     time = response.data;
-      
-    //    });
-      
-    // };
-    // function getDate(){
-    //     return time;
-    // }
+    function setDate() {
+       return $http({
+           method: 'GET',
+           url: '/time'
+       }).then(function successfullCallBack(response){
+        console.log(response.data)
+        time = response.data;
+       });
+    
+    };
+    function getDate(){
+       
+        return time;
+    }
 
 });
