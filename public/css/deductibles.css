@@ -95,4 +95,17 @@
         animation: amount-paid 1s;
         animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
+
+    #newGraph {
+        color: white;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #20BDD4;
+        font-size: 18px;
+        height: 100%;
+        animation: amount-paid 1s;
+        animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
 }
