@@ -24,9 +24,12 @@
 ],
     "prevCare": [
     { "id": 1,
-      "pCare1": "Check blood pressure - every 2 years",
-      "pCare2": "Flu shot - every flu season",
-      "pCare3": "Body Mass Index - periodically"
+      "pCareHeader1": "Blood Pressure",
+      "pCare1": "Adults ages 18 and older should have their blood pressure tested every 1-2 years.",
+      "pCareHeader2": "Body Mass Index (BMI)",
+      "pCare2": "Adults ages 18 and older should have thier BMI calculated.",
+      "pCareHeader3": "Cholesterol",
+      "pCare3": "Men 35 and older should have this done at leas once every five years."
     }
 ]
 }
