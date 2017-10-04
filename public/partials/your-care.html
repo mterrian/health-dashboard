@@ -5,7 +5,6 @@
 
     <div class="greeting">
         <h1>Your Care</h1>
-        <img src="/images/accenture_arrow.png" width="130" height="150" alt="">
         <div class="exitButton">
                 <span class="back" ng-click="go('/dashboard')">X</span>
         </div>
@@ -14,12 +13,21 @@
     <div class="yourCareContainer2">
         <div class = "yourCareTitle"> 
             <h2>{{userObject[0].firstName}}'s Your Care Reminders</h2> 
-            <h4 id="date">{{date}}</h4>
+            <!-- <h4 id="date">{{date}}</h4> -->
         </div>  
-        <div class="prevCareContent">     
-            <p>{{userCare[0].pCare1}}</p>       
-            <p>{{userCare[0].pCare2}}</p>  
-            <p>{{userCare[0].pCare3}}</p>   
+        <div class="prevCareContent">   
+            <div class="prevCare1">
+                <img src="images/heart.png" alt="heart" class="prevImg">
+                <p>{{userCare[0].pCare1}}</p>     
+            </div>  
+            <div class="prevCare2">
+                <img src="images/scale.png" alt="scale" class="prevImg">
+                <p>{{userCare[0].pCare2}}</p> 
+            </div>  
+            <div class="prevCare3">
+                <img src="images/chart.png" alt="chart" class="prevImg">
+                <p>{{userCare[0].pCare3}}</p>   
+            </div> 
         </div>
     </div>
     </div>
