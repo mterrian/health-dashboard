@@ -10,6 +10,7 @@
         <h3 class="deductibleTitle">{{userObject[0].firstName}}'s Financial Overview</h3>
             <div class="deductibleContent">
                 <div class="inNetwork"><h4>In-Network Deductible</h4>
+                    <p>The amount that you pay for your health services before your provider beging to contribute</p>
                     <div class="bar-container" id="fixedChart">
                         <div class="bar-data" id="newChart" ng-style="amountPaid()">
                             <span>{{style}}</span>
@@ -18,7 +19,8 @@
                     </div>
                 </div>
             
-                <div class="inNetwork"><h4>Out-Of-Network Deductible</h4>
+                <div class="inNetwork"><h4>Out-Of-Network Deductible:</h4>
+                    <p>The dollar amount that you pay each year before your health insurance begins to cover payments</p>
                     <div class="bar-container" id="fixedChart">
                         <div class="bar-data" id="newGraph" ng-style="amountPaid2()">
                             <span>{{style}}</span>
