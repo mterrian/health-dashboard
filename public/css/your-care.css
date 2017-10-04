@@ -69,17 +69,43 @@
 
 .yourCareTitle {
     grid-area: yourCareTitle;
-    margin-top: 5px;
+    margin-top: -20px;
+    margin-bottom: 10px;
 }
 
 
 .prevCareContent{
     grid-area: prevCareContent;
     padding-left: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "prevCare1 prevCare2 prevCare3";
 }
 
-h4#date {
+/* h4#date {
     text-align: center;
-} 
+}  */
+
+.prevCare1 {
+    grid-area: prevCare1;
+    position: relative;
+}
+
+.prevCare2 {
+    grid-area: prevCare2;
+}
+
+.prevCare3 {
+    grid-area: prevCare3;
+}
+
+.prevImg {
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;    
+    max-width: 50px;
+    max-height: 50px;
+}
 
 } 
