@@ -57,7 +57,7 @@
 @media screen and (min-width: 320px){
 
     body{
-        background-image: url("../images/accenture_portal_mobile.png");
+        /* background-image: url("../images/accenture_portal_mobile.png"); */
     }
     
   .containerSidebar{
@@ -161,7 +161,7 @@
 @media screen and (min-width: 768px){
 
     body{
-        background-image: url("../images/accenture_portal.png");
+        /* background-image: url("../images/accenture_portal.png"); */
         background-repeat: no-repeat
     }
     
