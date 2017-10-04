@@ -44,7 +44,7 @@
     max-width: 1000px;
     background-color:#E4E0D7;
     margin: 0 auto;
-    position: fixed;
+    position: relative;
     top: 60px;
     left: 0;
     right: 0;
@@ -280,7 +280,6 @@
     -o-transition: all 0.4s ease-out;
     transition: all 0.4s ease-out;
     box-shadow: 1px 3px 3px rgba(24, 24, 23, 0.61)
-    
 }
 
 .dashboardBox2:hover, .dashboardBox4:hover{
