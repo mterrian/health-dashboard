@@ -32,12 +32,12 @@
     z-index: 2;
  }
 
- .greeting img{
+ /* .greeting img{
      z-index: 0;
      position: absolute;
      top: 0px;
      left: 1px;
- }
+ } */
 
  .content{
     width: 80%;
@@ -164,7 +164,7 @@
     
     .content {
         display: grid;
-        grid-template-columns: 1.2fr 4fr;
+        grid-template-columns: 1fr 1fr;
         /* position: relative;
         top: 40px; */
         /* grid-gap: 5px; */
