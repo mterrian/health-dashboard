@@ -12,9 +12,9 @@
     ],
     "profile": [
     { "id": 2,
-      "username": "Bill.Shea",
-      "firstName": "Bill",
-      "lastName": "Shea",
+      "username": "John.Doe",
+      "firstName": "John",
+      "lastName": "Doe",
       "password": "HDDC",
       "gender": "Male",
       "plan": "PPO",
