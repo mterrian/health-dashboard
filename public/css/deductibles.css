@@ -2,16 +2,18 @@
 
     .deductiblesContainer {
         width: 80%;
+        box-shadow: 8px 10px 5px rgba(24, 24, 23, 0.61);
         max-width: 1000px;
         margin: 0 auto;
         margin-top: 60px;
+        min-height: 592px;
         display: grid;
-        background-color: lightblue;
-        grid-template-columns: 1fr 1fr;
+        background-color: white;
+        grid-template-columns: 1fr;
+        grid-template-rows: .3fr 1fr;
         grid-template-areas: 
-        "greeting greeting"
-        "deductibleTitle deductibleTitle"
-        "deductibleContent deductibleContent"
+        "greeting"
+        "deductiblesContainer2";
     }
 
     .greeting {
@@ -29,11 +31,25 @@
         font-family: 'Source Sans Pro', sans-serif;
         text-shadow: 2px 4px #55553E;
         letter-spacing: 2px;
+        padding-left: 5px;
         position: relative;
         font-size: 50px;
         color: #E4E0D7;
         left: 0;
         z-index: 2;
+    }
+
+    .deductiblesContainer2 {
+        margin: 0 auto;
+        margin: 10px 10px 10px 10px;
+        display: grid;
+        border-radius: 6px;
+        background-color: rgb(000, 170, 153);
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: .2fr 1fr;
+        grid-template-areas: 
+        "deductibleTitle deductibleTitle"
+        "deductibleContent deductibleContent";
     }
 
     .greeting img {
@@ -51,6 +67,7 @@
 
     .deductibleTitle {
         grid-area: deductibleTitle;
+        margin-top: 5px;
     }
 
     .deductibleContent {
@@ -67,6 +84,19 @@
     }
         
     #newChart {
+        color: white;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #20BDD4;
+        font-size: 18px;
+        height: 100%;
+        animation: amount-paid 1s;
+        animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    #newGraph {
         color: white;
         border-radius: 50px;
         display: flex;

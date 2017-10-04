@@ -1,20 +1,31 @@
-<div class="deductiblesContainer">
-        
-            <div class="greeting">
-                <h1>Deductibles</h1>
-                <img src ="/images/accenture_arrow.png" width="130" height="150" alt="">
-                <div class = "exitButton">
-                    <span class="back" ng-click="go('/dashboard')">X</span>
-                </div>
+<div class="deductiblesContainer">  
+    <div class="greeting">
+        <h1>Deductibles</h1>
+        <img src ="/images/accenture_arrow.png" width="130" height="150" alt="">
+            <div class = "exitButton">
+                <span class="back" ng-click="go('/dashboard')">X</span>
             </div>
-        
-            <h3 class="deductibleTitle">{{userObject[0].firstName}}'s Deductible Details</h3>
+    </div>
+    <div class="deductiblesContainer2"> 
+        <h3 class="deductibleTitle">{{userObject[0].firstName}}'s Financial Overview</h3>
             <div class="deductibleContent">
-                <div class="bar-container" id="fixedChart">
-                    <div class="bar-data" id="newChart" ng-style="amountPaid()">
-                        <span>{{style}}</span>
-                        <p>${{userObject[0].deductiblePaid}}</p>
+                <div class="inNetwork"><h4>In-Network Deductible</h4>
+                    <div class="bar-container" id="fixedChart">
+                        <div class="bar-data" id="newChart" ng-style="amountPaid()">
+                            <span>{{style}}</span>
+                            <p>${{userObject[0].deductiblePaid}}</p>
+                        </div> 
+                    </div>
+                </div>
+            
+                <div class="inNetwork"><h4>Out-Of-Network Deductible</h4>
+                    <div class="bar-container" id="fixedChart">
+                        <div class="bar-data" id="newGraph" ng-style="amountPaid2()">
+                            <span>{{style}}</span>
+                            <p>${{userObject[0].deductiblePaid}}</p>
+                        </div> 
                     </div>
                 </div>
             </div>
-        </div>
+    </div> 
+</div>
