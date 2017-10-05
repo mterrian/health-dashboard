@@ -1,4 +1,6 @@
- @media screen and (min-width: 320px){
+
+
+    @media screen and (min-width: 320px){
 
     .yourCareContainer1 {
         width: 80%;
@@ -51,7 +53,7 @@
     margin: 0 auto;
     margin: 10px 10px 10px 10px;
     display: grid;
-    min-height: 587px;
+    min-height: 400px;
     border-radius: 6px;
     background-color: rgb(000,170,153);
     grid-template-columns: 1fr 1fr;
@@ -61,12 +63,6 @@
     "prevCareContent prevCareContent";   
  }
 
- .greeting img{
-    z-index: 0;
-    position: absolute;
-    top: 0px;
-    left: 1px;
-}
 
 .exitButton {
    position: absolute;
@@ -83,16 +79,192 @@
 
 .prevCareContent{
     grid-area: prevCareContent;
-    padding-left: 20px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "prevCare1 prevCare1"
+    "prevCare2 prevCare2"
+    "prevCare3 prevCare3";
+}
+
+.prevCare1 {
+    background-color: white;
+    box-shadow: 5px 5px 2px rgba(24, 24, 23, 0.61);
+    border-radius: 8px;
+    grid-area: prevCare1;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    margin: 0 auto;
+    position: relative;
+    max-height: 300px;
+    min-width: 120px;
+}
+
+.prevCare2 {
+    grid-area: prevCare2;
+    background-color: white;
+    box-shadow: 8px 10px 5px rgb(000,170,153);
+    box-shadow: 5px 5px 2px rgba(24, 24, 23, 0.61);
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: relative;
+    max-height: 300px;
+    min-width: 120px;
+}
+
+.prevCare3 {
+    grid-area: prevCare3;
+    background-color: white;
+    box-shadow: 8px 10px 5px rgb(000,170,153);
+    box-shadow: 5px 5px 2px rgba(24, 24, 23, 0.61);
+    border-radius: 8px;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    max-height: 300px;
+    min-width: 120px;
+}
+
+.prevCareImgDiv {
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.prevImg {
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;    
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.prevCareText {
+    margin-top: 30px;
+    width: 260px;
+}
+
+.prevCareHeader {
+    text-align: center;
+}
+
+.userInfo {
+    font-size: 15px;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+} 
+
+
+@media screen and (min-width: 768px){
+
+.prevCare1 {
+        max-height: 300px;
+        max-width: 380px;
+}
+    
+.prevCare2 {
+        max-height: 300px;
+        max-width: 380px;
+}
+    
+.prevCareText {
+    margin-top: 30px;
+    width: 340px;
+}
+.prevCare3 {
+        max-height: 300px;
+        max-width: 380px;
+}
+}
+ 
+  @media screen and (min-width: 1100px){
+.yourCareContainer1 {
+        width: 80%;
+        box-shadow: 8px 10px 5px rgba(24, 24, 23, 0.61);
+        max-width: 1000px;
+        margin: 0 auto;
+        margin-top: 60px;
+        min-height: 592px;
+        display: grid;
+        background-color:rgba(24, 24, 23, 0.61);
+        grid-template-columns: 1fr;
+        grid-template-rows: .2fr 1fr;
+        grid-template-areas: 
+        "greeting"
+        "yourCareContainer2";  
+}
+
+.yourCareContainerBox{
+        background: white;
+        margin: 5px;
+}
+
+.greeting {
+        background-color: rgb(102,102,102);
+        /* padding-top: 10px;
+        padding-bottom: 10px; */
+        position: relative;
+        max-height: 154px;
+        margin-bottom: 0;
+        border-bottom: 4px solid transparent;
+        border-radius: 1px; 
+        grid-area: greeting;
+}
+    
+.greeting h1{
+        font-family: 'Source Sans Pro', sans-serif;
+        text-shadow: 2px 4px #55553E;
+        letter-spacing: 2px;
+        padding-left: 5px;
+        position: relative;
+        font-size: 50px;
+        color: #E4E0D7;
+        left: 0;
+        z-index: 2;
+}
+
+.yourCareContainer2 {
+    margin: 0 auto;
+    margin: 10px 10px 10px 10px;
+    display: grid;
+    min-height: 587px;
+    border-radius: 6px;
+    background-color: rgb(000,170,153);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .2fr 1fr;
+    grid-template-areas:
+    "yourCareTitle yourCareTitle"
+    "prevCareContent prevCareContent";   
+}
+.exitButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+ }
+ 
+ .yourCareTitle {
+     grid-area: yourCareTitle;
+     margin-top: -20px;
+     margin-bottom: 20px;
+ }
+
+.prevCareContent{
+    grid-area: prevCareContent;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas: 
     "prevCare1 prevCare2 prevCare3";
 }
 
-/* h4#date {
-    text-align: center;
-}  */
 
 .prevCare1 {
     background-color: white;
@@ -100,6 +272,7 @@
     border-radius: 8px;
     grid-area: prevCare1;
     position: relative;
+    margin-top: 20px;
     max-height: 400px;
     max-width: 250px;
 }
@@ -110,6 +283,8 @@
     box-shadow: 8px 10px 5px rgb(000,170,153);
     box-shadow: 5px 5px 2px rgba(24, 24, 23, 0.61);
     border-radius: 8px;
+    margin-left: 20px;
+    margin-right: 15px;
     max-height: 400px;
     max-width: 250px;
 }
@@ -121,6 +296,7 @@
     box-shadow: 5px 5px 2px rgba(24, 24, 23, 0.61);
     border-radius: 8px;
     max-height: 400px;
+    margin-left: 20px;
     max-width: 250px;
 }
 
@@ -142,6 +318,8 @@
 
 .prevCareText {
     margin-top: 30px;
+    width: 220px;
+    
 }
 
 .prevCareHeader {
@@ -155,4 +333,5 @@
     padding-right: 10px;
 }
 
-} 
+
+}  
