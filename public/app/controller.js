@@ -6,13 +6,19 @@ app.controller('mainCtrl', function($scope, $timeout, healthFactory){
 });
 
 app.controller('deductibleCtrl', function($scope, $timeout, $location, healthFactory) {
-    // $scope.ammountPaid = healthFactory.chartCtrl();
+    
+    let userObject = healthFactory.getLogin();
+    let barComplete = userObject[0].deductiblePaid/userObject[0].deductible*100;
+    let remaining = userObject[0].deductible - userObject[0].deductiblePaid;
+    $scope.userObject = healthFactory.getLogin(); 
+    $scope.remaining = remaining; 
+    
     $scope.amountPaid = function(){
         var chart = document.getElementById("newChart");
         var width = 1;
-        var id = setInterval(frame, 100);
+        var id = setInterval(frame, 10);
         function frame(){
-            if (width >= 33) {
+            if (width >= barComplete) {
                 clearInterval(id);
             } else {
                 width++;
@@ -25,9 +31,9 @@ app.controller('deductibleCtrl', function($scope, $timeout, $location, healthFac
     $scope.amountPaid2 = function(){
         var graph = document.getElementById("newGraph");
         var width = 1;
-        var id = setInterval(frame, 100);
+        var id = setInterval(frame, 10);
         function frame(){
-            if (width >= 75) {
+            if (width >= barComplete) {
                 clearInterval(id);
             } else {
                 width++;
@@ -36,11 +42,10 @@ app.controller('deductibleCtrl', function($scope, $timeout, $location, healthFac
             }
         }
     }
-    $scope.userObject = healthFactory.getLogin();  
-
     $scope.go = function(path){
         $location.path(path)
     }
+
 });
 
 

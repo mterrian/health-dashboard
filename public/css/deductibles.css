@@ -67,7 +67,6 @@
 
     .deductibleTitle {
         grid-area: deductibleTitle;
-        margin-top: 5px;
     }
 
     .deductibleContent {
@@ -107,5 +106,13 @@
         height: 100%;
         animation: amount-paid 1s;
         animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+
+    .info {
+        text-align: left;
+    }
+
+    .detail {
+        text-align: center;
     }
 }
