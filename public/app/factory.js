@@ -29,10 +29,11 @@ app.factory('healthFactory', function($http, $location) {
         if(userInfo.username === userObj[0].username && userInfo.password === userObj[0].password) {
             userObj = dataBase.data;
             $location.path('/dashboard')
-            console.log("checkLogin")
+            console.log("thisPassed")
         }   
         else {
             loginError = true;
+            userObj= loginError;
             console.log("This failed");
             }
         });
