@@ -67,7 +67,6 @@
 
     .deductibleTitle {
         grid-area: deductibleTitle;
-        margin-top: 5px;
     }
 
     .deductibleContent {
@@ -108,40 +107,13 @@
         animation: amount-paid 1s;
         animation-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
     }
+
+    .info {
+        text-align: left;
+    }
+
+    .detail {
+        text-align: center;
+    }
 }
 
-
-/* .panel {
-    position: relative;
-    margin-bottom: 1px;
-    margin: 0 auto;
-    width: 50%;
-    color: blue;
-    overflow: hidden;
-}
-
-.panelInput {
-    position: absolute;
-    opacity: 0;
-    z-index: -1;
-
-}
-
-.panelLabel {
-    position: relative;
-    display: block;
-    padding: 0 0 0 1em;
-    background: #16a085;
-    font-weight: bold;
-    line-height: 3;
-    cursor: pointer;
-  }
-
-  .panel-content {
-    max-height: 0;
-    overflow: hidden;
-    background: #1abc9c;
-    -webkit-transition: max-height .35s;
-    -o-transition: max-height .35s;
-    transition: max-height .35s;
-  } */
