@@ -16,6 +16,7 @@ if (
     !process.env.FITBIT_CALLBACK_URL
 ) {
     console.error('ENVIRONMENT VARIABLES NOT SET');
+    return;
 }
 server.use(middlewares);
 server.use(router);
@@ -35,10 +36,9 @@ app.use(express.static(__dirname + '/public'));
 // @TODO remove and use gulp
 if (process.env.ENVIRONMENT === 'development') {
     const browserSync = require('browser-sync');
-    const launcher = require('launch-browser');
     const bsApp = browserSync.create().init({
         logSnippet: false,
-        // proxy: 'localhost:4000',
+        proxy: 'localhost:4000',
         files: [
             '*.js',
             '.env',
@@ -49,17 +49,6 @@ if (process.env.ENVIRONMENT === 'development') {
         port: 4000
     });
     app.use(require('connect-browser-sync')(bsApp));
-
-    launcher('http://localhost:4000/', { browser: ['chrome'] }, function(
-        e,
-        browser
-    ) {
-        if (e) return console.log(e);
-
-        browser.on('stop', function(code) {
-            console.log('Browser closed with exit code:', code);
-        });
-    });
 }
 
 app.listen(4000, function() {
