@@ -1,33 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');  
 
 
-.greeting{
+
+.greetingLogin{
     background-color: rgb(102,102,102);
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-bottom: 0;
+    margin-bottom: 10px;
     border-bottom: 4px solid transparent;
     border-radius: 1px;
-
- }
-
- .greeting h1{
-    font-family: 'Source Sans Pro', sans-serif;
-    text-shadow: 2px 4px #55553E;
-    letter-spacing: 2px;
     position: relative;
-    font-size: 50px;
-    color: #E4E0D7;
-    left: 0;
-    z-index: 2;
+    max-height: 154px;
  }
 
- .greeting img{
-    z-index: 0;
-    position: absolute;
-    top: 0px;
-    left: 1px;
-}
 
 .formContainer{
     width: 40%;
@@ -51,15 +36,35 @@ body {
     font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
-/* h2#loginH2 {
-margin-top: 40px;
-margin-bottom: 30px;
-padding-top: 15px;
-text-align: center;
-color: #000000;
-font-size: 30px;
-font-weight: normal;
-} */
+
+.formContainer{
+    width: 70%;
+    height: 520px;
+    background-color:#E4E0D7;
+    margin: 0 auto;
+    position: fixed;
+    text-align: center;
+    top: 40px;
+    left: 0;
+    right: 0;
+    border: 3px solid rgb(102,102,102);
+    border-radius: 4px;
+    box-shadow: 8px 10px 5px rgba(24, 24, 23, 0.61)
+
+}
+
+
+.greetingLogin h1{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: 2px 4px #55553E;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #E4E0D7;
+    left: 0;
+    z-index: 2;
+ }
 
 a#loginA {
     text-align: center;
@@ -72,17 +77,16 @@ a#loginA {
 #anchorSpan {
     margin-top: 40px;
     display: inline-block;
-    width: 400px;
+    width: 200px;
     font-size: 15px;
     text-align: center;
 }
 
 label {
     display: inline-block;
-    text-align: right;
-    width: 70px;
+    text-align: center;
+    width: 80px;
     padding-right: 10px;
-    margin-left: -30px;
 }
 
 .checkboxLabel {
@@ -90,19 +94,9 @@ label {
         width: 140px;
 }
 
- /* .formContainer{
-border: 1px black solid;
-position: relative;
-margin: 150 auto;
-width: 450px;
-text-align: center;
-height: 480px;
-background-color: rgb(255,181,000);
-border-radius: 10px;
-}  */
 
     input  {
-        width: 250px;
+        width: 180px;
         height: 30px;
         font-size: 18px;
         border-radius: 3px;
@@ -154,10 +148,45 @@ color: rgb(255,181,000);;
 p#loginError {
    color: red;
    display: inline-block;
-   width: 400px;
+   width: 200px;
    height: 20px;
    text-align: center;
    font-size: 15px;
-   margin-bottom: -40px;
+   margin-bottom: -10px;
 }
 }
+
+@media screen and (min-width: 768px){
+
+    
+    .formContainer{
+        width: 50%;
+    
+    }
+    .greetingLogin{
+        max-height: 114px;
+     }
+    .greetingLogin h1{
+        font-size: 50px;
+     }
+    
+    a#loginA {
+        font-size: 15px;
+    }
+    
+        input  {
+            width: 250px;
+        }
+    
+    p#loginError {
+       color: red;
+       display: inline-block;
+       width: 400px;
+       height: 20px;
+       text-align: center;
+       font-size: 15px;
+       margin-bottom: -40px;
+    }
+
+}
+
