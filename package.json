@@ -13,12 +13,17 @@
     "angular-chart.js": "^1.1.1",
     "body-parser": "^1.18.2",
     "chart.js": "^2.7.0",
+    "dotenv": "^4.0.0",
     "express": "^4.15.5",
     "fitbit-client-oauth2": "^2.0.3",
+    "launch-browser": "^1.0.0",
     "nanobar": "^0.4.2"
   },
   "devDependencies": {
-    "json-server": "^0.12.0"
+    "browser-sync": "^2.18.13",
+    "connect-browser-sync": "^2.1.0",
+    "json-server": "^0.12.0",
+    "prettier": "^1.7.4"
   },
   "repository": {
     "type": "git",

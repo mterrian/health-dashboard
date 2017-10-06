@@ -1,51 +1,46 @@
-<!-- <div class="contentYourCare"> -->
-   
+<div class="yourCareContainer1">
 
-    <div class="yourCareContainer1">
-
-    <div class="greeting">
-        <h1>Your Care</h1>
-        <div class="exitButton">
-                <span class="back" ng-click="go('/dashboard')">X</span>
-        </div>
-    </div>   
-    <div class="yourCareContainerBox">
-    <div class="yourCareContainer2">
-        <div class = "yourCareTitle"> 
-            <h2>{{userObject[0].firstName}}'s Your Care Reminders</h2> 
-            <!-- <h4 id="date">{{date}}</h4> -->
-        </div>  
-        <div class="prevCareContent">   
-            <div class="prevCare1">
-                <div class="prevCareImgDiv">
-                    <img src="images/heart.png" alt="heart" class="prevImg">
-                </div>
-                <div class="prevCareText">
-                    <h4 class="prevCareHeader">{{userCare[0].pCareHeader1}}</h4>
-                    <p class="userInfo">{{userCare[0].pCare1}}</p>     
-                </div>
-            </div>  
-            <div class="prevCare2">
-                <div class="prevCareImgDiv">
-                <img src="images/scale.png" alt="scale" class="prevImg">
-                </div>
-                    <div class="prevCareText">
-                        <h4 class="prevCareHeader">{{userCare[0].pCareHeader2}}</h4>
-                        <p class="userInfo">{{userCare[0].pCare2}}</p> 
-                    </div>
-            </div>  
-            <div class="prevCare3">
-                <div class="prevCareImgDiv">
-                <img src="images/chart.png" alt="chart" class="prevImg">
-                </div>
-                    <div class="prevCareText">
-                            <h4 class="prevCareHeader">{{userCare[0].pCareHeader3}}</h4>
-                        <p class="userInfo">{{userCare[0].pCare3}}</p> 
-                    </div>  
-            </div> 
-        </div>
-    </div>
-    </div>
-    </div>
-    
-<!-- </div> -->
+	<div class="greeting">
+		<h1>Your Care</h1>
+		<div class="exitButton">
+			<span class="back" ng-click="go('/dashboard')">X</span>
+		</div>
+	</div>
+	<div class="yourCareContainerBox">
+		<div class="yourCareContainer2">
+			<div class="yourCareTitle">
+				<h2>{{userObject[0].firstName}}'s Your Care Reminders</h2>
+				<!-- <h4 id="date">{{date}}</h4> -->
+			</div>
+			<div class="prevCareContent">
+				<div class="prevCare1">
+					<div class="prevCareImgDiv">
+						<img src="images/heart.png" alt="heart" class="prevImg">
+					</div>
+					<div class="prevCareText">
+						<h4 class="prevCareHeader">{{userCare[0].pCareHeader1}}</h4>
+						<p class="userInfo">{{userCare[0].pCare1}}</p>
+					</div>
+				</div>
+				<div class="prevCare2">
+					<div class="prevCareImgDiv">
+						<img src="images/scale.png" alt="scale" class="prevImg">
+					</div>
+					<div class="prevCareText">
+						<h4 class="prevCareHeader">{{userCare[0].pCareHeader2}}</h4>
+						<p class="userInfo">{{userCare[0].pCare2}}</p>
+					</div>
+				</div>
+				<div class="prevCare3">
+					<div class="prevCareImgDiv">
+						<img src="images/chart.png" alt="chart" class="prevImg">
+					</div>
+					<div class="prevCareText">
+						<h4 class="prevCareHeader">{{userCare[0].pCareHeader3}}</h4>
+						<p class="userInfo">{{userCare[0].pCare3}}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
