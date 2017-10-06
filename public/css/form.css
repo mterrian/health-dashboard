@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');  
 
-
-
 .greetingLogin{
     background-color: rgb(102,102,102);
     padding-top: 10px;
@@ -12,7 +10,6 @@
     position: relative;
     max-height: 154px;
  }
-
 
 .formContainer{
     width: 40%;
@@ -147,9 +144,11 @@ color: rgb(255,181,000);;
 
 p#loginError {
    color: red;
-   display: inline-block;
-   width: 200px;
+   display: block;
+   width: 220px;
    height: 20px;
+   margin: 0 auto;
+   margin-top: 20px;
    text-align: center;
    font-size: 15px;
    margin-bottom: -10px;
@@ -185,7 +184,7 @@ p#loginError {
        height: 20px;
        text-align: center;
        font-size: 15px;
-       margin-bottom: -40px;
+       margin-bottom: -20px;
     }
 
 }
