@@ -2,8 +2,7 @@ const express = require('express');
 const route = express.Router();
 const moment = require('moment');
 const FitbitClient = require('fitbit-client-oauth2');
-const cookieParser = require('cookie-parser');
-const app = express()
+const cookie = require('cookie')
 
 const client = new FitbitClient(
     process.env.FITBIT_CLIENT_ID,
@@ -27,20 +26,24 @@ route.get('/oauth/fitbit', function(req, res, next) {
 });
 
 route.get('/oauth/fitbit/callback', function(req, res, next) {
-    var code = req.query.code;
+    let code = req.query.code;
 
     client
         .getToken(code, process.env.FITBIT_CALLBACK_URL)
         .then(function(oauth) {
             console.log(oauth.token.access_token);
-            let userToken = oauth.token.access_token;
+
             // ... save your token on db or session...
+            res.setHeader('Set-Cookie', cookie.serialize('x-healthProject', String(oauth.token.access_token),{
+                httpOnly: true,
+                maxAge: 60 * 60 * 24 * 7
+            }))
             
 
             // then redirect
-            res.redirect(302, '/#!/dashboard');
+            res.redirect(302, `/#!/dashboard?access_token=${oauth.token.access_token}`);
         })
-        .catch(function(err) {}
+        .catch(function(err) {
             // something went wrong.
             res.json(err);
         });
