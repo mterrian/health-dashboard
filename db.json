@@ -1,35 +1,43 @@
 {
     "posts": [
-      { "id": 1, 
-        "title": "json-server", 
-        "author": "typicode" }
+        {
+            "id": 1,
+            "title": "json-server",
+            "author": "typicode"
+        }
     ],
     "comments": [
-      { "id": 1, 
-        "body": "some comment", 
-        "postId": 1 
-      }
+        {
+            "id": 1,
+            "body": "some comment",
+            "postId": 1
+        }
     ],
     "profile": [
-    { "id": 2,
-      "username": "John.Doe",
-      "firstName": "John",
-      "lastName": "Doe",
-      "password": "HDDC",
-      "gender": "Male",
-      "plan": "PPO",
-      "deductible": 1000,
-      "deductiblePaid": 315.13
-  }
-],
+        {
+            "id": 2,
+            "username": "John.Doe",
+            "firstName": "John",
+            "lastName": "Doe",
+            "password": "HDDC",
+            "gender": "Male",
+            "plan": "PPO",
+            "deductible": 1000,
+            "deductiblePaid": 315.13
+        }
+    ],
     "prevCare": [
-    { "id": 1,
-      "pCareHeader1": "Blood Pressure",
-      "pCare1": "Adults ages 18 and older should have their blood pressure tested every 1-2 years.",
-      "pCareHeader2": "Body Mass Index (BMI)",
-      "pCare2": "Adults ages 18 and older should have thier BMI calculated.",
-      "pCareHeader3": "Cholesterol",
-      "pCare3": "Men 35 and older should have this done at leas once every five years."
-    }
-]
+        {
+            "id": 1,
+            "pCareHeader1": "Blood Pressure",
+            "pCare1":
+                "Adults ages 18 and older should have their blood pressure tested every 1-2 years.",
+            "pCareHeader2": "Body Mass Index (BMI)",
+            "pCare2":
+                "Adults ages 18 and older should have thier BMI calculated.",
+            "pCareHeader3": "Cholesterol",
+            "pCare3":
+                "Men 35 and older should have this done at leas once every five years."
+        }
+    ]
 }

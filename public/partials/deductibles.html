@@ -5,7 +5,7 @@
                 <span class="back" ng-click="go('/dashboard')">X</span>
             </div>
     </div>
-    <div class="deductiblesContainer2"> 
+    <div class="deductiblesContainer2">
         <h3 class="deductibleTitle">{{userObject[0].firstName}}'s Financial Overview</h3>
             <div class="deductibleContent">
                 <div class="inNetwork"><h4>In-Network Deductible:</h4>
@@ -18,23 +18,22 @@
                     <h6 class="detail">You have paid ${{userObject[0].deductiblePaid}} of ${{userObject[0].deductible}}</h6>
                     <h6 class="moreDetail">${{remaining}} until In-Network Deductible met.</h6>
                 </div>
-            
+
                 <div class="outNetwork"><h4>Out-Of-Network Deductible:</h4>
                     <h5 class="info">The dollar amount that you pay each year before your health insurance begins to cover payments</h5>
                     <div class="bar-container" id="fixedChart">
                         <div class="bar-data" id="newGraph" ng-style="amountPaid2()">
                             <span>{{}}</span>
                             <p>${{userObject[0].deductiblePaid}}</p>
-                        </div> 
+                        </div>
                     </div>
                     <h6 class="detail">You have paid ${{userObject[0].deductiblePaid}} of ${{userObject[0].deductible}}</h6>
                     <h6 class="moreDetail">${{remaining}} until Out-Of-Network Deductible met.</h6>
                 </div>
             </div>
-
-    </div> 
+	</div>
 </div>
-<!-- 
+<!--
 
 
 <div class="accordionDeduct">

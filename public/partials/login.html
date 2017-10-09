@@ -1,35 +1,28 @@
-
 <div class="formContainer">
   <div class="greetingLogin">
     <h1 id="loginH2">Member Login</h2>
-  </div>    
-        
+  </div>
     <form ng-submit="submitWords(word)">
         <div id="userNameDiv">
             <label for="Username">Username</label>
-          <input type="text"   ng-model="word.username">
+			<input type="text"   ng-model="word.username">
         </div>
 
         <div id="userNamePass">
-          <label for="Password">Password</label>
-          <input type={{inputType}} ng-model="word.password">
+			<label for="Password">Password</label>
+		  	<input type={{inputType}} ng-model="word.password">
         </div>
 
-        
+
           <input class= "checkboxInput" type="checkbox"  ng-click="hideShowPassword()" ng-model="passwordCheckbox">
           <label class = "checkboxLabel" for ="checkbox" ng-if="passwordCheckbox">Hide password</label>
           <label class = "checkboxLabel" for ="checkbox" ng-if="!passwordCheckbox">Show password</label>
-       
+
 
           <button type="submit" name="button">Sign In</button>
           <p id="loginError" class="hide" ng-show="loginError">Please re-enter your username/password</p>
 
-          <span id="anchorSpan">
-            <a href="" id="loginA"> Forgot your password?</a>
-            </span>
-        </form>
-    
+          <span id="anchorSpan"><a href="" id="loginA"> Forgot your password?</a></span>
+    </form>
+
 </div>
-
-
-
