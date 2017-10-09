@@ -90,4 +90,20 @@ app.controller('loginCtrl', function(
         if ($scope.inputType == 'password') $scope.inputType = 'text';
         else $scope.inputType = 'password';
     };
+
+});
+
+app.controller('stayHealthyCtrl', function(
+    $scope,
+    $timeout,
+    $location,
+    healthFactory
+) {
+    $scope.go = function(path) {
+        $location.path(path);
+    };
+
+    $scope.stayHealthy=healthFactory.getLogin();
+
+
 });

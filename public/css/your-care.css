@@ -244,6 +244,7 @@
     "yourCareTitle yourCareTitle"
     "prevCareContent prevCareContent";   
 }
+
 .exitButton {
     position: absolute;
     top: 10px;
@@ -332,6 +333,5 @@
     padding-left: 10px;
     padding-right: 10px;
 }
-
 
 }  

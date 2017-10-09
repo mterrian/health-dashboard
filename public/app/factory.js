@@ -5,12 +5,15 @@ app.factory('healthFactory', function($http, $location) {
     var loginError = false;
     var userCare = {};
     var time = {};
+    var stayHealthy = {};
 
     return {
         // These are our two methods.
         loginError: loginError,
         checkLogin: checkLogin,
         getLogin: getLogin,
+        setStayHealthy: setStayHealthy,
+        getStayHealthy: getStayHealthy,
         setPrevCare: setPrevCare,
         getPrevCare: getPrevCare,
         setDate: setDate,
@@ -42,6 +45,20 @@ app.factory('healthFactory', function($http, $location) {
 
     function getLogin() {
         return userObj;
+    }
+
+    function setStayHealthy(){
+        return $http({
+            method: 'GET',
+            // url: 'http://localhost:3000/profile/'
+        }).then(function successfullCallBack(dataBase) {
+            stayHealthy = dataBase.data;
+            localStorage.setItem('userObj', JSON.stringify(userObj));
+            $location.path('/dashboard');
+        });
+    }  
+    function getStayHealthy(){
+        return stayHealthy;
     }
 
     function setPrevCare() {
