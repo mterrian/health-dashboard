@@ -67,6 +67,15 @@ app.controller('dashboardCtrl', function(
     $scope.userCare = healthFactory.getPrevCare();
 
     $scope.date = healthFactory.getDate();
+
+    var tokenObject = $location.search();
+    console.log(tokenObject);
+    if (tokenObject.access_token){
+        localStorage.setItem('tokenObject', JSON.stringify(tokenObject));
+    }
+
+    $scope.tokenObject = healthFactory.setToken(tokenObject);
+
 });
 
 app.controller('loginCtrl', function(
