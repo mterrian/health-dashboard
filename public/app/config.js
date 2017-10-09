@@ -22,6 +22,10 @@ app.config(function($routeProvider) {
             controller: 'planCtrl',
             templateUrl: 'partials/plan-ahead.html'
         })
+        .when('/stay-healthy', {
+            controller: 'stayHealthyCtrl',
+            templateUrl: 'partials/stay-healthy.html'
+        })
         .otherwise({
             redirectTo: '/login'
         });
