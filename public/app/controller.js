@@ -80,22 +80,8 @@ app.controller('dashboardCtrl', function(
     $scope.userCare = 
         JSON.parse(localStorage.getItem('userCare')) || healthFactory.getPrevCare();
 
-<<<<<<< HEAD
-    $scope.date = healthFactory.getDate();
-
-    // var tokenObject = $location.search();
-    // console.log(tokenObject);
-    // if (tokenObject.access_token){
-    //     localStorage.setItem('tokenObject', JSON.stringify(tokenObject));
-    // }
-
-    // $scope.tokenObject = healthFactory.setToken(tokenObject);
-
-=======
     $scope.date = 
         JSON.parse(localStorage.getItem('time')) || healthFactory.getDate();
-    
->>>>>>> develop
 });
 
 app.controller('loginCtrl', function(
