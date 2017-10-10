@@ -80,6 +80,11 @@
 			margin: 0 auto;
 			display: grid;
 			grid-template-columns: 1fr 1fr;
-			/* grid-template-areas: ; */
+			grid-template-areas: 
+			"fitbitInfo fitbitInfo";
+	}
+
+	.fitbitInfo {
+		margin: 0 auto;
 	}
 }

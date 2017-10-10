@@ -41,7 +41,7 @@ route.get('/oauth/fitbit/callback', function(req, res, next) {
             
 
             // then redirect
-            res.redirect(302, `/#!/dashboard?access_token=${oauth.token.access_token}`);
+            res.redirect(302, `/#!/stay-healthy?access_token=${oauth.token.access_token}`);
         })
         .catch(function(err) {
             // something went wrong.

@@ -48,8 +48,7 @@ app.factory('healthFactory', function($http, $location) {
     }
 
     function setToken(tokenObject){
-        console.log(tokenObject);
-        var p = $http({
+        return $http({
             method: 'GET',
             url: 'https://api.fitbit.com/1/user/-/profile.json',
             headers: {
@@ -59,11 +58,12 @@ app.factory('healthFactory', function($http, $location) {
             userToken = dataBase.data;
             console.log(userToken);
             // localStorage.setItem('userObj', JSON.stringify(userObj));
-            // $location.path('/dashboard');
+            $location.path('/stay-healthy');
         });
     }  
     function getToken(){
-        return stayHealthy;
+        console.log(userToken);
+        return userToken;
     }
 
     function setPrevCare() {
