@@ -5,15 +5,15 @@ app.factory('healthFactory', function($http, $location) {
     var loginError = false;
     var userCare = {};
     var time = {};
-    var stayHealthy = {};
+    var userToken = {};
 
     return {
         // These are our two methods.
         loginError: loginError,
         checkLogin: checkLogin,
         getLogin: getLogin,
-        setStayHealthy: setStayHealthy,
-        getStayHealthy: getStayHealthy,
+        setToken: setToken,
+        getToken: getToken,
         setPrevCare: setPrevCare,
         getPrevCare: getPrevCare,
         setDate: setDate,
@@ -46,18 +46,23 @@ app.factory('healthFactory', function($http, $location) {
         return userObj;
     }
 
-    function setStayHealthy(){
+    function setToken(tokenObject){
         return $http({
             method: 'GET',
-            // url: 'http://localhost:3000/profile/'
+            url: 'https://api.fitbit.com/1/user/-/profile.json',
+            headers: {
+                Authorization: "Bearer " + tokenObject.access_token
+            }
         }).then(function successfullCallBack(dataBase) {
-            stayHealthy = dataBase.data;
-            localStorage.setItem('userObj', JSON.stringify(userObj));
-            $location.path('/dashboard');
+            userToken = dataBase.data;
+            console.log(userToken);
+            // localStorage.setItem('userObj', JSON.stringify(userObj));
+            $location.path('/stay-healthy');
         });
     }  
-    function getStayHealthy(){
-        return stayHealthy;
+    function getToken(){
+        console.log(userToken);
+        return userToken;
     }
 
     function setPrevCare() {

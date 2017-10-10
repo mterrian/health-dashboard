@@ -12,8 +12,18 @@
 					<h2>{{stayHealthy[0].firstName}}'s Stay Healthy Reminders</h2>
 				</div>
 				<div class="stayHealthyContent">
-					<p>What up!?</p>
+					<a href='/oauth/fitbit'>click here to authorize ya fitbit</a>
+					<div class="fitbitInfo">
+							<p> Name: {{token.user.displayName}}</p>
+							<img src="" alt="" ng-src="{{token.user.avatar}}">
+							<p>Age: {{token.user.age}}</p>
+							<p>Member Since: {{token.user.memberSince}}</p>
+							<p>Average Daily Steps:{{token.user.averageDailySteps}}</p>
+		
+						</div>
+						
 				</div>
+			
 			</div>
 		</div>
 	</div>
