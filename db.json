@@ -23,7 +23,9 @@
             "gender": "Male",
             "plan": "PPO",
             "deductible": 1000,
-            "deductiblePaid": 315.13
+            "deductiblePaid": 400,
+            "outOfNetworkDeductible": 1000,
+            "outOfNetworkPaid": 750
         }
     ],
     "prevCare": [
