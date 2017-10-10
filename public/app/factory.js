@@ -30,7 +30,6 @@ app.factory('healthFactory', function($http, $location) {
                 userInfo.username === userObj[0].username &&
                 userInfo.password === userObj[0].password
             ) {
-                userObj = dataBase.data;
                 localStorage.setItem('userObj', JSON.stringify(userObj));
 
                 $location.path('/dashboard');
@@ -72,6 +71,7 @@ app.factory('healthFactory', function($http, $location) {
             url: 'http://localhost:3000/prevCare/'
         }).then(function successfullCallBack(dataBase) {
             userCare = dataBase.data;
+            localStorage.setItem('userCare', JSON.stringify(userCare));
         });
     }
 
@@ -86,6 +86,7 @@ app.factory('healthFactory', function($http, $location) {
         }).then(function successfullCallBack(response) {
             console.log(response.data);
             time = response.data;
+            localStorage.setItem('time', JSON.stringify(time));
         });
     }
 
